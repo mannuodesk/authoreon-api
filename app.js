@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 
 var users = require('./routes/users');
 
+var cron = require('./handler/cron');
+
 var app = express();
 
 app.use(bodyParser.json());
