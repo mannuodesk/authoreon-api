@@ -80,11 +80,11 @@ router.get('/', function (req, res) {
         last1YearCapacity += parseFloat(last1YearTransactions[i].tokenValue);
       }
       res.json({
-        last24HoursCapacity: last24HoursCapacity / Math.pow(10, 18),
-        last7DaysCapacity: last7DaysCapacity / Math.pow(10, 18),
-        last14DaysCapacity: last14DaysCapacity / Math.pow(10, 18),
-        last1MonthCapacity: last1MonthCapacity / Math.pow(10, 18),
-        last1YearCapacity: last1YearCapacity / Math.pow(10, 18)
+        last24HoursCirculation: last24HoursCapacity / Math.pow(10, 18),
+        last7DaysCirculation: last7DaysCapacity / Math.pow(10, 18),
+        last14DaysCirculation: last14DaysCapacity / Math.pow(10, 18),
+        last1MonthCirculation: last1MonthCapacity / Math.pow(10, 18),
+        last1YearCirculation: last1YearCapacity / Math.pow(10, 18)
       })
     }
   });
